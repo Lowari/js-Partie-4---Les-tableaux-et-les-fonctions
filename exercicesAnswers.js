@@ -63,7 +63,10 @@ let returnName = function (array) {
 
 //Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
 let returnSentence = function (array) {
-  let phrasing = `Bonjour, je suis ${array["name"]}. J'ai ${array["age"]} ans et j'habite ${array["city"]}.`;
+  let name = array.name;
+  let age = array.age;
+  let city = array.city;
+  let phrasing = `Bonjour, je suis ${name}. J'ai ${age} ans et j'habite ${city}.`;
   return phrasing;
 }
 
@@ -81,6 +84,6 @@ let sortArray = function (array) {
 
 //Exercice 14 : Transformer le tableau array en chaîne de caractères', function() {
 let returnString = function (array) {
-  let join = array.join(',');
+  let join = array.toString();
   return join;
 }
