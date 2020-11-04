@@ -18,7 +18,7 @@ let returnThirdIndex = function (array) {
 
 //Exercice 4 : Changer le 2ème élément du tableau languages par php.', function() {
 let changeSecondElement = function (array) {
-  let slice = array.splice(1, 1, "php");
+  array[1] = "php";
   return array;
 }
 
